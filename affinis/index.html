@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Affine transformations</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="up">Move figure </h1>
+        <div class="content">
+            <div class="top">
+                <div class="left">
+                    <h2>Cordinates:</h2>
+                    <div class="data-row">
+                        <div class="letter bold">a</div>
+                        <div class="letter">x</div>
+                        <input type='text' id="ax" value="-5" />
+                        <div class="letter">y</div>
+                        <input type='text' id="ay" value="-5" />
+                    </div>
+                    <div class="data-row">
+                        <div class="letter bold">b</div>
+                        <div class="letter">x</div>
+                        <input type='text' id="bx" value="-5" />
+                        <div class="letter">y</div>
+                        <input type='text' id="by" value="5" />
+                    </div>
+                    <div class="data-row">
+                        <div class="letter bold">c</div>
+                        <div class="letter">x</div>
+                        <input type='text' id="cx" value="5" />
+                        <div class="letter">y</div>
+                        <input type='text' id="cy" value="10" />
+                    </div>
+                    <div class="data-row">
+                        <div class="letter bold">Scale</div>
+                        <div class="letter">k</div>
+                        <input type='text' id="k" value="4" />
+                    </div>
+                    
+                    <button class="show" id="show">Move</button>
+                </div>
+                <div class="right" id="right">
+                    <canvas id="canvas">Not supported in your browser!</canvas>
+                </div>
+            </div>
+            
+        </div>
+        <div class="button-group">
+            <div class="overlay-button" >
+                <div class="btn-content"  onclick="history.back()"><img
+                    src="https://icon-library.com/images/back-icon-png/back-icon-png-1.jpg"
+                    alt="Back" /></div>
+            </div>
+        </div>
+
+        <div id="bottom"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
